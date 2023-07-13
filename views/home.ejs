@@ -1,0 +1,10 @@
+<%- include('partials/header') -%>
+
+<h1>Homepage</h1>
+
+    <% tweets.forEach (function(tweet) { %>
+        <h2> <%= tweet.title %> </h2>
+        <p> <%= tweet.body.substring(0, 100) + " ..." %> <a href="/tweets/<%=tweet.title%>" >Read more</a> </p>
+    <% }) %>
+
+<%- include('partials/footer') -%>
