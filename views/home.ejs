@@ -4,7 +4,7 @@
 
     <% tweets.forEach (function(tweet) { %>
         <h2> <%= tweet.title %> </h2>
-        <p> <%= tweet.body.substring(0, 100) + " ..." %> <a href="/tweets/<%=tweet.title%>" >Read more</a> </p>
+        <p> <%= tweet.content.substring(0, 100) + " ..." %> <a href="/tweets/<%=tweet.id%>" >Read more</a> </p>
     <% }) %>
 
 <%- include('partials/footer') -%>
